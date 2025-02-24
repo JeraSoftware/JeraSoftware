@@ -1,0 +1,99 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    font-weight: bold;
+}
+
+p {
+    font-size: 1.1rem;
+}
+
+section {
+    padding: 60px 0;
+}
+
+/* Hero Section */
+.hero {
+    background: url('img/bg.png') no-repeat center center;
+    background-size: cover;
+    color: #fff;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.5rem;
+}
+
+/* Service Cards */
+.card {
+    border: none;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.card-text {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Contact Form */
+#contactForm .form-control {
+    margin-bottom: 15px;
+    padding: 1rem;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Navbar Logo Styling */
+.navbar-logo {
+    max-height: 100px;  /* Set a maximum height */
+    width: auto;        /* Let width scale proportionally */
+    margin-right: 20px; /* Optional: Adds spacing between the logo and navbar text */
+}
+
+/* Optional: On smaller screens (like mobile), reduce the size */
+@media (max-width: 768px) {
+    .navbar-logo {
+        max-height: 60px;  /* Logo will be smaller on mobile */
+    }
+}
+
+
+
+/* Footer Logo Styling */
+.footer-logo {
+    max-height: 100px;  /* Set a maximum height */
+    width: auto;        /* Let width scale proportionally */
+    margin-bottom: 20px; 
+}
+
+
+.nav-item a:hover{
+    color:#DC4C64 !important;
+}
+
+#bold{
+    font-weight: bold;
+}

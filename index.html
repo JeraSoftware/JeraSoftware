@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="JeRa Technologies - Innovative Technology Solutions">
+    <title>JeRa Technologies</title>
+    <link rel="icon" href="img/logo.png" type="image/png">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "6Pqqp-F2mmrxvJxdF",
+      });
+   })();
+</script>
+<script src="Script.js">
+
+</script>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-white">
+        <div class="container-fluid">
+            <!-- Logo -->
+            <a class="navbar-brand text-dark" href="#">
+                <img src="img/logo.png" alt="JeRa Technologies" class="navbar-logo">JeRa Technologies
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link text-success fw-bold " href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-success fw-bold" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link text-success fw-bold" href="#about">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link text-success fw-bold" href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero bg-primary text-white text-center py-5">
+        <div class="container">
+            <h1>Innovating Technology Solutions for the Future</h1>
+            <p>Your partner in digital transformation.</p>
+            <a href="#services" class="btn btn-success btn-lg text-white">Explore Our Services</a>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="text-center text-danger">About Us</h2>
+            <p class="lead text-center">At JeRa Technologies, we are a passionate and dynamic<span id="bold">
+                    startup</span> based in <span id="bold">Chennai</span>, India, with a mission to provide
+                cutting-edge technology solutions that drive digital transformation for businesses of all sizes. Though
+                we are a small team of <span id="bold">10+ highly experienced professionals</span>, our expertise spans
+                across key domains like<span id="bold"> Web App Development, Mobile App Development, API Testing, Web
+                    Testing, and Mobile Testing.</span></p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center text-danger">Our Services</h2>
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <div class="card">
+                        <img src="img/mob and web.jpg" class="card-img-top" alt="service2">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Mobile App and Web App Testing</h5>
+                            <p class="card-text">We provide comprehensive mobile and web app testing services to ensure
+                                flawless performance, security, and usability. Our expert team leverages advanced tools
+                                to deliver reliable, user-friendly, and high-quality applications.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="card">
+                        <img src="img/app.jpg" class="card-img-top" alt="service1">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">API Testing</h5>
+                            <p class="card-text">
+                                We offer comprehensive API testing services to ensure seamless functionality, security, and performance. Our experts use advanced tools to deliver reliable, high-quality APIs for your applications.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="card">
+                        <img src="img/web Dev.jpg" class="card-img-top" alt="service3">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Web App Development</h5>
+                            <p class="card-text">We build scalable, high-performance web applications tailored to your
+                                business needs, ensuring robust functionality, security, and seamless user experiences.
+                                Using the latest technologies, we deliver intuitive, responsive, and enterprise-grade
+                                web solutions.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center text-danger">Contact Us</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <form >
+                        <input type="text" class="form-control mb-3" id="name" name="name" placeholder="Your Name" required>
+                        <input type="email" class="form-control mb-3" id="email" name="email" placeholder="Your Email" required>
+                        <input type="text" class="form-control mb-3" id="subject" name="subject" placeholder="Subject" required>
+                        <textarea class="form-control mb-3" id="message" name="message" placeholder="Your Message" rows="4" required></textarea>
+                        <button type="submit" onclick="sendMail(event)" class="btn btn-primary">Send Message</button>
+
+                    </form>
+                </div>
+                <div class="col-md-6">
+                    <h5 class="text-danger">Our Contact Details:</h5>
+                    <p><strong>Phone:</strong> +91 8438362825</p>
+                    <p><strong>Email:</strong> jerasoftwaretechnologies@gmail.com</p>
+                    <p><strong>Address:</strong> Chennai, TN, India</p>
+                    <img src="https://flagcdn.com/in.svg" alt="India Flag" style="width: 50px; height: auto;">
+                    <div class="mt-3">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.759897653768!2d80.22097771475473!3d13.082680990785917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52674e4b75e03f%3A0x5767ddba3e3f7ed4!2sChennai%2C%20Tamil%20Nadu%2C%20India!5e0!3m2!1sen!2sus!4v1699295378623!5m2!1sen!2sus"
+                            width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <img src="img/logo.png" alt="JeRa Technologies" class="footer-logo">
+        <p>&copy; 2024 JeRa Technologies | All Rights Reserved</p>
+        <p>Contact us: +91 8438362825 | jerasoftwaretechnologies@gmail.com</p>
+    </footer>
+
+    <!-- Bootstrap JS & Dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
