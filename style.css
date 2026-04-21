@@ -115,3 +115,17 @@ footer {
 #contact p {
     margin-bottom: 10px;
 }
+.card img {
+    height: 220px;
+    object-fit: contain;
+    padding: 20px;
+}
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.card:hover {
+    transform: translateY(-8px);
+    transition: 0.3s;
+}
