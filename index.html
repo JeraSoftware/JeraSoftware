@@ -164,40 +164,50 @@ We focus on delivering a secure, stable, and seamless user experience through ri
     </section>
 
     <!-- Contact Us Section -->
-    <section id="contact" class="py-5">
-        <div class="container">
-            <h2 class="text-center text-danger">Contact Us</h2>
-            <div class="row">
-                <div class="col-md-6">
-                    <form >
-                        <input type="text" class="form-control mb-3" id="name" name="name" placeholder="Your Name" required>
-                        <input type="email" class="form-control mb-3" id="email" name="email" placeholder="Your Email" required>
-                        <input type="text" class="form-control mb-3" id="subject" name="subject" placeholder="Subject" required>
-                        <textarea class="form-control mb-3" id="message" name="message" placeholder="Your Message" rows="4" required></textarea>
-                        <button type="submit" onclick="sendMail(event)" class="btn btn-primary">Send Message</button>
+   <section id="contact" class="py-5">
+    <div class="container">
+        <h2 class="text-center text-danger mb-5">Contact Us</h2>
 
-                    </form>
-                </div>
-                <div class="col-md-6">
-                    <h5 class="text-danger">Our Contact Details:</h5>
-                    <p><strong>Phone:</strong> +91 7358467216</p>
-                    <!--updation  -->
-                    <a href="https://wa.me/917358467216" target="_blank" class="btn btn-success mt-3">
-    Chat on WhatsApp
-</a>
-                    <p><strong>Email:</strong> jerasoftwaretechnologies@gmail.com</p>
-                    <p><strong>Address:</strong> Chennai, TN, India</p>
-                    <img src="https://flagcdn.com/in.svg" alt="India Flag" style="width: 50px; height: auto;">
-                    <div class="mt-3">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.759897653768!2d80.22097771475473!3d13.082680990785917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52674e4b75e03f%3A0x5767ddba3e3f7ed4!2sChennai%2C%20Tamil%20Nadu%2C%20India!5e0!3m2!1sen!2sus!4v1699295378623!5m2!1sen!2sus"
-                            width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                    </div>
+        <div class="row align-items-start">
+            
+            <!-- LEFT: FORM -->
+            <div class="col-md-6">
+                <form onsubmit="sendMail(event)">
+                    <input type="text" class="form-control mb-3" id="name" placeholder="Your Name" required>
+                    <input type="email" class="form-control mb-3" id="email" placeholder="Your Email" required>
+                    <input type="text" class="form-control mb-3" id="subject" placeholder="Subject" required>
+                    <textarea class="form-control mb-3" id="message" rows="5" placeholder="Your Message" required></textarea>
+                    
+                    <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                </form>
+            </div>
+
+            <!-- RIGHT: CONTACT DETAILS -->
+            <div class="col-md-6">
+                <h5 class="text-danger mb-3">Our Contact Details:</h5>
+
+                <p><strong>Phone:</strong> +91 7358467216</p>
+
+                <a href="https://wa.me/917358467216" target="_blank" class="btn btn-success mb-3">
+                    Chat on WhatsApp
+                </a>
+
+                <p><strong>Email:</strong> jerasoftwaretechnologies@gmail.com</p>
+                <p><strong>Address:</strong> Chennai, TN, India</p>
+
+                <img src="https://flagcdn.com/in.svg" alt="India Flag" style="width: 40px; margin-bottom: 15px;">
+
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps?q=Chennai&output=embed"
+                        width="100%" height="250" style="border:0;" loading="lazy">
+                    </iframe>
                 </div>
             </div>
-        </div>
-    </section>
 
+        </div>
+    </div>
+</section>
     <section class="text-center py-5 bg-primary text-white">
     <h2>Need Help Testing Your Product?</h2>
     <p>We will test your application and send a FREE bug report.</p>
