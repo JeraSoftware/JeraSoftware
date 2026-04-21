@@ -129,3 +129,40 @@ footer {
     transform: translateY(-8px);
     transition: 0.3s;
 }
+.about-section {
+    background-color: #f8f9fa;
+}
+
+.about-text {
+    max-width: 800px;
+    margin: 0 auto 15px;
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+.underline {
+    width: 80px;
+    height: 3px;
+    background-color: #dc3545;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+.about-box {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.about-box:hover {
+    transform: translateY(-5px);
+}
+
+.about-footer {
+    max-width: 700px;
+    margin: auto;
+    font-size: 1.1rem;
+}
