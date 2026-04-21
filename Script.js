@@ -1,6 +1,6 @@
 function sendMail(event) {
     event.preventDefault();  
-    emailjs.send("service_y41bmfi", "template_aplxii5", {
+    emailjs.send("service_oltbuma", "template_aplxii5", {
         subject: document.getElementById("subject").value,
         name: document.getElementById("name").value,
         message: document.getElementById("message").value,
