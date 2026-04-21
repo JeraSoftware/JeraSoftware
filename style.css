@@ -97,3 +97,21 @@ footer {
 #bold{
     font-weight: bold;
 }
+
+#contact .row {
+    align-items: flex-start;
+}
+
+#contact form {
+    padding-right: 20px;
+}
+
+#contact .map-container {
+    margin-top: 15px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#contact p {
+    margin-bottom: 10px;
+}
